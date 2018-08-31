@@ -7,8 +7,8 @@ if(count($_POST) > 0){
   $message = $_POST['message'];
   fwrite($f, $date.' '.$username."\n".$message."\n\n");
   fclose($f);
-  $board = file_get_contents('messages.txt');
 }
+$board = file_get_contents('messages.txt');
 ?>
 <pre>
 Server: <?php echo $hostname;?>
