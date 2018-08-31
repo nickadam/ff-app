@@ -1,6 +1,6 @@
 version: '3.5'
 services:
-  sso:
+  ff-app:
     build: .
     image: nickadam/ff-app:latest
     ports:
